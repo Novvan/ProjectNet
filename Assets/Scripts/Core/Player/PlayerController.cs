@@ -16,7 +16,6 @@ namespace ProjectNet.Core.Player
 		private PlayerInputActions _playerInputActions;
 		private InputAction _move;
 		private Vector2 _moveDirection;
-		private Rigidbody2D _rb;
 
 		#endregion
 
@@ -26,7 +25,6 @@ namespace ProjectNet.Core.Player
 			_playerData = gameObject.GetComponent<PlayerData>();
 			_playerView = gameObject.GetComponent<PlayerView>();
 			_playerInputActions = new PlayerInputActions();
-			_rb = gameObject.GetComponent<Rigidbody2D>();
 		}
 
 		private void OnEnable()
@@ -43,7 +41,8 @@ namespace ProjectNet.Core.Player
 
 		private void FixedUpdate()
 		{
-			_rb.velocity = _moveDirection * _playerData.speed;
+			if (!photonView.IsMine) return;
+			_playerData.Move(_moveDirection);
 		}
 	}
 }
