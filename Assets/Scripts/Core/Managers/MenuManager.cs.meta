@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 50a548931e8a5524b8a799673b55d113
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameSettings: {fileID: 11400000, guid: 7a7f57891c756504a953e37cc7c0fec9, type: 2}
+  - loginButton: {instanceID: 0}
+  - screenNameInputField: {instanceID: 0}
+  - roomNameInputField: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
