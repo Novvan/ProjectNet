@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
+using ProjectNet.Core.CameraScripts;
 using ProjectNet.Core.Character;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ namespace ProjectNet.Core.Managers
 {
 	public class ServerManager : MonoBehaviourPunCallbacks
 	{
+		[SerializeField] private CameraController cameraController;
+
 		private Dictionary<Player, PlayerCharacter> _playerCharacters = new Dictionary<Player, PlayerCharacter>();
 		private Player _server;
 
@@ -34,7 +37,11 @@ namespace ProjectNet.Core.Managers
 		public void RequestConnect(Player client)
 		{
 			CreatePlayer(client);
-		}
+			var character = _playerCharacters[client];
+			var id = character.photonView.ViewID;
+			photonView.RPC("SetCamera", client, id, cameraController.Offset);
+			character.GetComponent<PlayerCharacterView>().SetPlayerName(client.NickName);
+		} 
 
 		private void CreatePlayer(Player client)
 		{
@@ -44,7 +51,6 @@ namespace ProjectNet.Core.Managers
 			{
 				_playerCharacters[client] = character;
 			}
-			obj.GetComponent<PlayerCharacterView>().SetPlayerName(client.NickName);
 		}
 
 		[PunRPC]
@@ -61,6 +67,16 @@ namespace ProjectNet.Core.Managers
 				_playerCharacters[client].Move(dir);
 			}
 		}
+
+		[PunRPC]
+		public void SetCamera(int id, Vector3 offset)
+		{
+			var view = PhotonView.Find(id);
+			if (view == null) return;
+			var characterTransform = view.gameObject.transform;
+			cameraController.SetTarget(characterTransform, offset);
+		}
+
 
 		public override void OnPlayerLeftRoom(Player otherPlayer)
 		{

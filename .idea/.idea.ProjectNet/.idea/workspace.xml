@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CameraScripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Tools.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -80,7 +84,7 @@
       <workItem from="1660171414134" duration="876000" />
       <workItem from="1660235081319" duration="3950000" />
       <workItem from="1660243160821" duration="1604000" />
-      <workItem from="1660245078535" duration="2710000" />
+      <workItem from="1660245078535" duration="5388000" />
     </task>
     <servers />
   </component>
