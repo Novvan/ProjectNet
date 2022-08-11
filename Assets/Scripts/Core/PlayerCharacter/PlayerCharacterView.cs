@@ -3,9 +3,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ProjectNet.Core.Player
+namespace ProjectNet.Core.PlayerCharacter
 {
-	public class PlayerView : MonoBehaviourPun
+	public class PlayerCharacterView : MonoBehaviourPun
 	{
 		[SerializeField] private TMP_Text nicknameText;
 		[SerializeField] private Image micImage;

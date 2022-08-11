@@ -1,9 +1,9 @@
 ﻿using Photon.Pun;
 using UnityEngine;
 
-namespace ProjectNet.Core.Player
+namespace ProjectNet.Core.PlayerCharacter
 {
-	public class PlayerData : MonoBehaviourPun
+	public class PlayerCharacter : MonoBehaviourPun
 	{
 		public float speed = 2;
 		private Rigidbody2D _rb;
