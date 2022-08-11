@@ -40,7 +40,7 @@ namespace ProjectNet.Core.Managers
 			var character = _playerCharacters[client];
 			var id = character.photonView.ViewID;
 			photonView.RPC("SetCamera", client, id, cameraController.Offset);
-			character.GetComponent<PlayerCharacterView>().SetPlayerName(client.NickName);
+			photonView.RPC("SetPlayerName", RpcTarget.All, client.NickName);
 		} 
 
 		private void CreatePlayer(Player client)

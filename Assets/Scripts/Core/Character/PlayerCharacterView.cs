@@ -13,6 +13,7 @@ namespace ProjectNet.Core.Character
 
 		public Action OnChangedName;
 
+		[PunRPC]
 		public void SetPlayerName(string playerName)
 		{
 			_playerName = playerName;
