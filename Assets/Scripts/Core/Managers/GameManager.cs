@@ -39,21 +39,11 @@ namespace ProjectNet.Core.Managers
 			DontDestroyOnLoad(gameObject);
 		}
 
-		private void Start()
-		{
-			if (PhotonNetwork.IsMasterClient)
-			{
-				PhotonNetwork.Instantiate(gameSettings.playerPrefab.name, Vector3.zero, Quaternion.identity);
-			}
-		}
-
 		private void Update()
 		{
 			if (!PhotonNetwork.IsMasterClient) return;
 			if (PhotonNetwork.CurrentRoom.PlayerCount == gameSettings.maxPlayers && _gameState == GameState.Waiting)
 				SetGameState(GameState.Play);
-			
-			
 		}
 
 		private void SetGameState(GameState gameState)
