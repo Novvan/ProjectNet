@@ -44,6 +44,7 @@ namespace ProjectNet.Core.Managers
 			{
 				_playerCharacters[client] = character;
 			}
+			obj.GetComponent<PlayerCharacterView>().SetPlayerName(client.NickName);
 		}
 
 		[PunRPC]
