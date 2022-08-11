@@ -42,20 +42,20 @@ namespace ProjectNet.Core.Managers
 		private void Start()
 		{
 			if (!PhotonNetwork.IsMasterClient) Destroy(this);
+			SetGameState(GameState.Waiting);
 		}
 
 		private void Update()
 		{
 			if (PhotonNetwork.CurrentRoom.PlayerCount - 1 == gameSettings.maxPlayers && _gameState == GameState.Waiting)
 				SetGameState(GameState.Play);
-
-			Debug.Log(_gameState);
 		}
 
 		private void SetGameState(GameState gameState)
 		{
 			_gameState = gameState;
 			OnGameStateChanged?.Invoke(gameState);
+			Debug.Log(_gameState);
 		}
 	}
 }
