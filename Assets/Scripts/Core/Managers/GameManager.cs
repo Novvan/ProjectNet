@@ -33,17 +33,23 @@ namespace ProjectNet.Core.Managers
 			}
 			else
 			{
-				Destroy(gameObject);
+				Destroy(this);
 			}
 
-			DontDestroyOnLoad(gameObject);
+			DontDestroyOnLoad(this);
+		}
+
+		private void Start()
+		{
+			if (!PhotonNetwork.IsMasterClient) Destroy(this);
 		}
 
 		private void Update()
 		{
-			if (!PhotonNetwork.IsMasterClient) return;
-			if (PhotonNetwork.CurrentRoom.PlayerCount == gameSettings.maxPlayers && _gameState == GameState.Waiting)
+			if (PhotonNetwork.CurrentRoom.PlayerCount - 1 == gameSettings.maxPlayers && _gameState == GameState.Waiting)
 				SetGameState(GameState.Play);
+
+			Debug.Log(_gameState);
 		}
 
 		private void SetGameState(GameState gameState)
