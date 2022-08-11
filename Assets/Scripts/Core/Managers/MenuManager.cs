@@ -53,8 +53,10 @@ namespace ProjectNet.Core.Managers
 			}
 
 			PhotonNetwork.NickName = screenNameInputField.text;
+			
+			var maxPlayer = gameSettings.maxPlayers + 1;
 			var roomOptions = new RoomOptions{
-				MaxPlayers = gameSettings.maxPlayers,
+				MaxPlayers = (byte) maxPlayer,
 				IsVisible = true,
 				IsOpen = true
 			};
@@ -62,7 +64,7 @@ namespace ProjectNet.Core.Managers
 			PhotonNetwork.JoinOrCreateRoom(roomNameInputField.text, roomOptions, TypedLobby.Default);
 			loginButton.interactable = false;
 		}
-		
+
 		public override void OnJoinedRoom() => PhotonNetwork.LoadLevel("Game");
 
 		public override void OnCreateRoomFailed(short returnCode, string message)
