@@ -33,7 +33,7 @@ namespace ProjectNet.Core.CameraScripts
 		{
 			var pos = target.position + offset;
 			var camTransform = _cam.transform;
-			pos.y = camTransform.position.y;
+			pos.z = camTransform.position.z;
 			camTransform.position = pos;
 		}
 	}
