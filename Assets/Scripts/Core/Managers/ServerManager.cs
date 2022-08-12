@@ -40,7 +40,7 @@ namespace ProjectNet.Core.Managers
 			var character = _playerCharacters[client];
 			var id = character.photonView.ViewID;
 			photonView.RPC("SetCamera", client, id, cameraController.Offset);
-			photonView.RPC("SetPlayerName", RpcTarget.All, client.NickName);
+			character.GetComponent<PlayerCharacterView>().SetPlayerNickname(client.NickName);
 		} 
 
 		private void CreatePlayer(Player client)
@@ -61,6 +61,15 @@ namespace ProjectNet.Core.Managers
 
 		[PunRPC]
 		public void RequestMove(Player client, Vector2 dir)
+		{
+			if (_playerCharacters.ContainsKey(client))
+			{
+				_playerCharacters[client].Move(dir);
+			}
+		}
+		
+		[PunRPC]
+		public void RequestShoot(Player client, Vector2 dir)
 		{
 			if (_playerCharacters.ContainsKey(client))
 			{

@@ -11,20 +11,24 @@ namespace ProjectNet.Core.Character
 		private string _playerName = "player";
 		public TMP_Text nicknameText;
 
-		public Action OnChangedName;
-
-		[PunRPC]
-		public void SetPlayerName(string playerName)
-		{
-			_playerName = playerName;
-			OnChangedName?.Invoke();
-		}
-
 		private void Awake()
 		{
 			if (!photonView.IsMine) Destroy(this);
-			OnChangedName += () => nicknameText.text = _playerName;
 		}
+		
+		public void SetPlayerNickname(string nickname)
+		{
+			_playerName = nickname;
+			nicknameText.text = _playerName;
+			photonView.RPC("UpdateNickname", RpcTarget.OthersBuffered, _playerName);
+		}
+
+		[PunRPC]
+		public void UpdateNickname(string playerName)
+		{
+			nicknameText.text = playerName;
+		}
+
 
 		public void SetTalking(bool isActive)
 		{
