@@ -26,7 +26,8 @@ namespace ProjectNet.Core.Character
 
 		public void Move(Vector2 direction)
 		{
-			_rb.velocity = direction * speed;
+			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
+			_rb.velocity = direction.normalized * speed;
 		}
 	}
 }
