@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="" />
+    <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBullet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBullet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemyDead.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemyDead.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemy_strip7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemy_strip7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sGun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sGun.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sMap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sMap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerIdle_strip4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerIdle_strip4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerRun_strip7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerRun_strip7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sWall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sWall.png.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +92,7 @@
       <workItem from="1660243160821" duration="1604000" />
       <workItem from="1660245078535" duration="5898000" />
       <workItem from="1660329430736" duration="3443000" />
+      <workItem from="1660597028130" duration="639000" />
     </task>
     <servers />
   </component>
