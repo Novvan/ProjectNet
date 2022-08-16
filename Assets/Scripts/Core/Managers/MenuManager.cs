@@ -65,9 +65,16 @@ namespace ProjectNet.Core.Managers
 			loginButton.interactable = false;
 		}
 
-		public override void OnJoinedRoom() => PhotonNetwork.LoadLevel("Game");
+		public override void OnJoinedRoom() 
+		{
+			PhotonNetwork.AutomaticallySyncScene = true;
+			if (PhotonNetwork.IsMasterClient)
+			{
+				PhotonNetwork.LoadLevel("Game");
+			}
+		}
 
-		public override void OnCreateRoomFailed(short returnCode, string message)
+        public override void OnCreateRoomFailed(short returnCode, string message)
 		{
 			Debug.LogError($"Failed to create room. Error code: {returnCode} Message: {message}");
 			loginButton.interactable = true;

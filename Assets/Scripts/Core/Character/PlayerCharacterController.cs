@@ -16,6 +16,7 @@ namespace ProjectNet.Core.Character
 
 		private PlayerCharacterInputActions _playerInputActions;
 		private InputAction _move;
+		private InputAction _fire;
 		private Vector2 _moveDirection;
 
 		#endregion
@@ -32,6 +33,8 @@ namespace ProjectNet.Core.Character
 		{
 			_move = _playerInputActions.Player.Move;
 			_move.Enable();
+			_fire = _playerInputActions.Player.Fire;
+			_fire.Enable();
 		}
 
 		private void Start()
@@ -43,6 +46,7 @@ namespace ProjectNet.Core.Character
 		private void Update()
 		{
 			_moveDirection = _move.ReadValue<Vector2>();
+			if (_fire.triggered) Debug.Log("hola");
 		}
 
 		private void FixedUpdate()

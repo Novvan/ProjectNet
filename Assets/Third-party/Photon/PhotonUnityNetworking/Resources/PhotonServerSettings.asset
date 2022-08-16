@@ -46,6 +46,8 @@ MonoBehaviour:
   - SetPlayerName
   - UpdateNickname
   - RequestShoot
+  - SetAnim
+  - MoveBullet
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
