@@ -31,16 +31,22 @@ namespace ProjectNet.Core.Character
 			photonView.RPC("UpdateNickname", RpcTarget.OthersBuffered, _playerName);
 		}
 
+		public void SetTalking(bool isActive)
+		{
+
+			photonView.RPC("UpdateTalking", RpcTarget.OthersBuffered, isActive);
+		}
+
+		[PunRPC]
+		public void UpdateTalking(bool isActive)
+		{
+			nicknameText.color = isActive ? Color.green : Color.white;
+		}
+
 		[PunRPC]
 		public void UpdateNickname(string playerName)
 		{
 			nicknameText.text = playerName;
-		}
-
-
-		public void SetTalking(bool isActive)
-		{
-			nicknameText.color = isActive ? Color.green : Color.white;
 		}
 
 		[PunRPC]

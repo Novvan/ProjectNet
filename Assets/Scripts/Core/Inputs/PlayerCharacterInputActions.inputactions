@@ -1,5 +1,5 @@
 {
-    "name": "PlayerInputActions",
+    "name": "PlayerCharacterInputActions",
     "maps": [
         {
             "name": "Player",
@@ -11,7 +11,8 @@
                     "id": "f7b7d0e5-54c0-47e0-86c2-29171d7c0cfb",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Fire",
@@ -19,7 +20,17 @@
                     "id": "f4da4b42-f91a-4486-acb0-dd2ee13348a4",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Talk",
+                    "type": "Button",
+                    "id": "d2e2fac3-26ea-47d2-a99b-3a2bc8319770",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -108,6 +119,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56acba6b-fa39-466b-ac0e-fcd53c82a2be",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Talk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f74673b3-9d70-4e9c-86b2-da0194419390",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Talk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
