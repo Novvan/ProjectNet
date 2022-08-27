@@ -46,17 +46,18 @@ namespace ProjectNet.Core.Character
 		[PunRPC]
 		public void SetAnim(PlayerAnimations anim)
 		{
-			switch (anim)
-			{
-				case PlayerAnimations.Idle:
-					_animator.Play("Player_idle");
-					break;
-				case PlayerAnimations.Walk:
-					_animator.Play("Player_walk");
-					break;
-				default:
-					throw new ArgumentOutOfRangeException(nameof(anim), anim, null);
-			}
+			//TODO: ANIMACIONES DE MOVIMIENTO
+			// switch (anim)
+			// {
+			// 	case PlayerAnimations.Idle:
+			// 		_animator.Play("Player_idle");
+			// 		break;
+			// 	case PlayerAnimations.Walk:
+			// 		_animator.Play("Player_walk");
+			// 		break;
+			// 	default:
+			// 		throw new ArgumentOutOfRangeException(nameof(anim), anim, null);
+			// }
 		}
 	}
 }

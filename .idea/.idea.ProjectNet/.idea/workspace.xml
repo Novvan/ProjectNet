@@ -3,10 +3,180 @@
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Bullet/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Bullet/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Bullet/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Bullet/BulletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/6x3 Cells.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/6x3 Cells.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/No Outlines/npc x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/NPC/npc x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/8x13 Cells.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/8x13 Cells.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players blue x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players green x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players grey x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/No Outlines/players red x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players blue x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players green x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players grey x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Players/players red x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/Read Me.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/20x11 Cells.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/20x11 Cells.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/UI/ui x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech_DungeonDemo/tileset x3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/Palette.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/Palette.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_11.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_11.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_12.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_12.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_13.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_13.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_14.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_14.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_18.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_18.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_19.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_19.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_20.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_20.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_26.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_26.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_27.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_27.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_30.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_30.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_33.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_33.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_36.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_36.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_43.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_43.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_45.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_45.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_49.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_49.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_50.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_50.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_51.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_51.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_52.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_52.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_53.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_53.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sMap_9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/Tilemap/sWall_7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/aBullet.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/aBullet.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/aDeath.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/aDeath.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sBullet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemyDead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemyDead.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemy_strip7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sEnemy_strip7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sGun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sGun.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sMap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sMap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerIdle_strip4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerIdle_strip4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerRun_strip7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sPlayerRun_strip7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sWall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/topdown_shooter_assets/sWall.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +188,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CameraScripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Managers/ChatManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Tools.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -31,16 +202,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\AppData\Unity\Editors\2019.4.40f1\Editor\Unity.exe" />
@@ -88,6 +258,7 @@
       <workItem from="1660245078535" duration="5898000" />
       <workItem from="1660329430736" duration="3443000" />
       <workItem from="1660597028130" duration="1339000" />
+      <workItem from="1661635362119" duration="4967000" />
     </task>
     <servers />
   </component>

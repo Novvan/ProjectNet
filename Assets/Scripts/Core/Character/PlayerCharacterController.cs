@@ -18,12 +18,21 @@ namespace ProjectNet.Core.Character
 		private InputAction _move;
 		private InputAction _fire;
 		private Vector2 _moveDirection;
+		private bool _isWriting;
 
 		#endregion
 
 		private void Awake()
 		{
 			if (PhotonNetwork.IsMasterClient) Destroy(this);
+			
+			var chatManager = FindObjectOfType<ChatManager>();
+			if(chatManager)
+			{
+				//me ahorro crear la funcion
+				chatManager.OnSelect += () => _isWriting = true;
+				chatManager.OnDeselect += () => _isWriting = false;
+			}
 			
 			_localClient = PhotonNetwork.LocalPlayer;
 			_playerInputActions = new PlayerCharacterInputActions();
@@ -45,6 +54,7 @@ namespace ProjectNet.Core.Character
 
 		private void Update()
 		{
+			if (_isWriting) return;
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered) Debug.Log("hola");
 		}

@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Photon.Pun;
-using Photon.Realtime;
+﻿using Photon.Pun;
 
-public class BulletController : MonoBehaviourPun
+namespace ProjectNet.Core.Bullet
 {
-
-    private void Awake()
+    public class BulletController : MonoBehaviourPun
     {
-        if (!PhotonNetwork.IsMasterClient) Destroy(this);
+
+        private void Awake()
+        {
+            if (!PhotonNetwork.IsMasterClient) Destroy(this);
+        }
     }
 }
