@@ -1,5 +1,7 @@
 ﻿using System;
 using Photon.Pun;
+using Photon.Voice.PUN;
+using Photon.Voice.Unity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,11 +19,18 @@ namespace ProjectNet.Core.Character
 		private string _playerName = "player";
 		public TMP_Text nicknameText;
 		private Animator _animator;
+		private Recorder _recorder;
 
 		private void Awake()
 		{
 			if (!photonView.IsMine) Destroy(this);
 			_animator = GetComponent<Animator>();
+			_recorder = PhotonVoiceNetwork.Instance.PrimaryRecorder;
+		}
+
+		private void Update()
+		{
+			if(_recorder.TransmitEnabled) SetTalking(_recorder.TransmitEnabled);
 		}
 
 		public void SetPlayerNickname(string nickname)

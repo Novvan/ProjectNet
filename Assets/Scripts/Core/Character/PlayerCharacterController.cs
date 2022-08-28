@@ -20,7 +20,7 @@ namespace ProjectNet.Core.Character
 		private Vector2 _moveDirection;
 		private bool _isWriting;
 		private Recorder _recorder;
-		private PlayerCharacterView _view;
+		// private PlayerCharacterView _view;
 
 		#endregion
 
@@ -40,7 +40,7 @@ namespace ProjectNet.Core.Character
 			_playerInputActions = new PlayerCharacterInputActions();
 
 			_recorder = PhotonVoiceNetwork.Instance.PrimaryRecorder;
-			_view = GetComponent<PlayerCharacterView>();
+			// _view = GetComponent<PlayerCharacterView>();
 		}
 
 		private void OnEnable()
@@ -67,7 +67,7 @@ namespace ProjectNet.Core.Character
 			if (_recorder == null) return;
 			var isTalking = _talk.IsPressed();
 			_recorder.TransmitEnabled = isTalking;
-			_view.SetTalking(isTalking);
+			// _view.SetTalking(isTalking);
 		}
 
 		private void FixedUpdate()
