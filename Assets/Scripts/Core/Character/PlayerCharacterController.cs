@@ -65,8 +65,8 @@ namespace ProjectNet.Core.Character
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered) Debug.Log("hola");
 			if (_recorder == null) return;
-			var isTalking = _talk.IsPressed();
-			_recorder.TransmitEnabled = isTalking;
+			// var isTalking = _talk.IsPressed();
+			_recorder.TransmitEnabled = Input.GetKeyDown(KeyCode.P);
 			// _view.SetTalking(isTalking);
 		}
 
