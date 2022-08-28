@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TechDungPlayer2.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Outer Buddies/buddie0 sprite sheet x1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Outer Buddies/buddie0 sprite sheet x1.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
       <workItem from="1660329430736" duration="3443000" />
       <workItem from="1660597028130" duration="1339000" />
       <workItem from="1661635362119" duration="7557000" />
-      <workItem from="1661728744955" duration="662000" />
+      <workItem from="1661728744955" duration="1069000" />
     </task>
     <servers />
   </component>
