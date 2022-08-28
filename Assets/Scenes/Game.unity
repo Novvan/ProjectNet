@@ -255,8 +255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -12.5, y: 12.5}
+  m_SizeDelta: {x: -25, y: -25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168099647
 MonoBehaviour:
@@ -452,7 +452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0009794901}
+  m_AnchoredPosition: {x: 0, y: 0.00013936171}
   m_SizeDelta: {x: 0, y: 333}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &419648977
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1768295270}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1389425514}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.83248013
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1075,7 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345386649}
   - component: {fileID: 1345386648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 1773425355}
   - component: {fileID: 1773425354}
   - component: {fileID: 1773425356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4217,7 +4217,7 @@ GameObject:
   - component: {fileID: 2067326986}
   - component: {fileID: 2067326988}
   - component: {fileID: 2067326987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
