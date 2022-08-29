@@ -13,14 +13,15 @@ namespace ProjectNet.Core.Character
 	{
 		#region Variables
 
-		private Player _localClient;
+		public bool isDead = false;
 
+
+		private Player _localClient;
 		private PlayerCharacterInputActions _playerInputActions;
 		private InputAction _move, _fire, _talk;
 		private Vector2 _moveDirection;
 		private bool _isWriting;
 		private Recorder _recorder;
-		// private PlayerCharacterView _view;
 
 		#endregion
 
@@ -31,7 +32,6 @@ namespace ProjectNet.Core.Character
 			var chatManager = FindObjectOfType<ChatManager>();
 			if (chatManager)
 			{
-				//me ahorro crear la funcion
 				chatManager.OnSelect += () => _isWriting = true;
 				chatManager.OnDeselect += () => _isWriting = false;
 			}
@@ -40,7 +40,6 @@ namespace ProjectNet.Core.Character
 			_playerInputActions = new PlayerCharacterInputActions();
 
 			_recorder = PhotonVoiceNetwork.Instance.PrimaryRecorder;
-			// _view = GetComponent<PlayerCharacterView>();
 		}
 
 		private void OnEnable()
@@ -62,6 +61,7 @@ namespace ProjectNet.Core.Character
 		private void Update()
 		{
 			if (_isWriting) return;
+			if (isDead) return;
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered)
 			{
@@ -74,6 +74,7 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
+			if (isDead) return;
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}

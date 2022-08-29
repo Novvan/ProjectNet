@@ -14,11 +14,12 @@ GameObject:
   - component: {fileID: 7638286438290811041}
   - component: {fileID: 583485871855099574}
   - component: {fileID: 6212069907084828201}
+  - component: {fileID: 5074195443089863698}
   - component: {fileID: -995206278132694607}
   - component: {fileID: 2321329720730821130}
   - component: {fileID: 7991562495310959617}
   - component: {fileID: 3567548363752671693}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -78,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1935332991
-  m_SortingLayer: 4
+  m_SortingLayerID: -1678015913
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 4018159971328910668, guid: 3e03e61124469474692663635e666c59,
     type: 3}
@@ -179,11 +180,28 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 5074195443089863698}
   - {fileID: -995206278132694607}
   - {fileID: 2321329720730821130}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &5074195443089863698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419128492824727378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &-995206278132694607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +236,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 1
     Name: isMirror
+  - Type: 4
+    SynchronizeType: 0
+    Name: walking
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

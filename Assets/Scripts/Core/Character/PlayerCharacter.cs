@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using System;
+using Photon.Pun;
 using ProjectNet.Core.Interfaces;
 using ProjectNet.Core.BulletComponents;
 using ProjectNet.Core.Managers;
@@ -18,6 +19,9 @@ namespace ProjectNet.Core.Character
 		private Rigidbody2D _rb;
 		private PlayerCharacterView _playerCharacterView;
 		private float _lastLookDirection = 1;
+		private int _lives = 3;
+
+		public Action OnDeath;
 
 		#endregion
 
@@ -35,7 +39,7 @@ namespace ProjectNet.Core.Character
 			if (_rb.velocity != Vector2.zero)
 			{
 				_playerCharacterView.SetWalk(true);
-				
+
 				if (direction.normalized.x != 0)
 					_lastLookDirection = direction.normalized.x;
 
@@ -65,6 +69,26 @@ namespace ProjectNet.Core.Character
 				return;
 			}
 			bullet.SetDirection(dir);
+		}
+
+		private void OnTriggerEnter2D(Collider2D col)
+		{
+			if (col.gameObject.CompareTag("Enemy"))
+			{
+				ServerManager.Instance.RequestRPC("RequestDamage", photonView.ViewID);
+			}
+		}
+
+
+		public void TakeDamage()
+		{
+			_lives--;
+			if (_lives <= 0)
+			{
+				FindObjectOfType<PlayerCharacterController>().isDead = true;
+				PhotonNetwork.Destroy(gameObject);
+			}
+			this.transform.position = GameManager.Instance.spawnPoint.position;
 		}
 	}
 }

@@ -17,8 +17,9 @@ namespace ProjectNet.Core.Managers
 	{
 		public GameSettings gameSettings;
 		public int keys;
+		public Transform spawnPoint;
 		private GameState _gameState;
-
+		
 		public event Action<GameState> OnGameStateChanged;
 
 

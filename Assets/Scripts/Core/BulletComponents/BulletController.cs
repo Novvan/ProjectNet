@@ -26,6 +26,7 @@ namespace ProjectNet.Core.BulletComponents
 		public void Move(Vector2 dir)
 		{
 			_rb.velocity = dir * _bullet.speed;
+			if (_rb.velocity.x < 0) gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
 		}
 
 		private void Update()

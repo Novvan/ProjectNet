@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
+using ProjectNet.Core.BulletComponents;
 using ProjectNet.Core.CameraScripts;
 using ProjectNet.Core.Character;
 using ProjectNet.Core.DoorComponents;
+using ProjectNet.Core.EnemyComponents;
 using UnityEngine;
 
 namespace ProjectNet.Core.Managers
@@ -67,6 +69,30 @@ namespace ProjectNet.Core.Managers
 			{
 				_playerCharacters[client].Move(dir);
 			}
+		}
+		
+		[PunRPC]
+		public void RequestDamage(int viewId)
+		{
+			foreach (var client in _playerCharacters)	
+			{
+				if (client.Value.photonView.ViewID == viewId)
+				{
+					client.Value.TakeDamage();
+				}
+			}
+		}
+		
+		[PunRPC]
+		public void RequestEnemyMove(GameObject enemy, Vector2 dir)
+		{
+			enemy.GetComponent<Enemy>().Move(dir);
+		}
+		
+		[PunRPC]
+		public void RequestResetEnemyMove(GameObject enemy)
+		{
+			enemy.GetComponent<Enemy>().ResetMove();
 		}
 
 		[PunRPC]

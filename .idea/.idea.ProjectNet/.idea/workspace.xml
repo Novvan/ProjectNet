@@ -3,21 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Shoot.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Shoot.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Walk1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Walk1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/BulletController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/CameraScripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EnemyComponents/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Interfaces/IPickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Managers/ChatManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Pickups/Key.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,7 +104,7 @@
       <workItem from="1661635362119" duration="7557000" />
       <workItem from="1661728744955" duration="7935000" />
       <workItem from="1661738552251" duration="13464000" />
-      <workItem from="1661787293789" duration="2109000" />
+      <workItem from="1661787293789" duration="10296000" />
     </task>
     <servers />
   </component>

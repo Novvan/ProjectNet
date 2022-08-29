@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - Enemy
+  - TriggerRadius
   layers:
   - Default
   - TransparentFX
@@ -14,9 +15,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
+  - Enemy
+  - Bullets
+  - AreaTriggers
   - 
   - 
   - 
@@ -51,6 +52,12 @@ TagManager:
     locked: 0
   - name: pickUps
     uniqueID: 2563850355
+    locked: 0
+  - name: enemy
+    uniqueID: 968102373
+    locked: 0
+  - name: bullet
+    uniqueID: 2616951383
     locked: 0
   - name: player
     uniqueID: 1935332991

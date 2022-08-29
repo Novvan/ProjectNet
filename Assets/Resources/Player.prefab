@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 424704637332124903}
   - component: {fileID: 5967143559577730714}
   - component: {fileID: 7609162210095678332}
-  - component: {fileID: 4092457752554928760}
+  - component: {fileID: 1240898911155911985}
   - component: {fileID: 35343856280896892}
   - component: {fileID: 6789822960109467334}
+  - component: {fileID: 9212290283187915002}
   - component: {fileID: 2344341343974741186}
   - component: {fileID: 6999078975961956452}
   - component: {fileID: 5824828102510559806}
@@ -91,8 +92,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.2}
   m_EdgeRadius: 0
---- !u!70 &4092457752554928760
-CapsuleCollider2D:
+--- !u!58 &1240898911155911985
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,9 +105,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -0.85}
+  serializedVersion: 2
+  m_Radius: 0.35
 --- !u!114 &35343856280896892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +128,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 6789822960109467334}
+  - {fileID: 9212290283187915002}
   - {fileID: 5602126354647335519}
   - {fileID: 2930614928875047470}
   sceneViewId: 0
@@ -148,6 +150,22 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &9212290283187915002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424704637332124900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &2344341343974741186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,7 +691,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1935332991
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 3
   m_Sprite: {fileID: -4763319155423742589, guid: 3e03e61124469474692663635e666c59,
     type: 3}
