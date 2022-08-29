@@ -15,12 +15,12 @@ namespace ProjectNet.Core.Managers
 	{
 		public Action OnSelect = delegate { };
 		public Action OnDeselect = delegate { };
-		
+
 		public TMP_Text content;
 		public TMP_InputField inputField;
 		public ScrollRect scrollRect;
 		public int maxLines;
-		
+
 		private ChatClient _chatClient;
 		private string[] _channels;
 		private string[] _chats;
@@ -85,17 +85,22 @@ namespace ProjectNet.Core.Managers
 			if (string.IsNullOrEmpty(inputField.text) || string.IsNullOrWhiteSpace(inputField.text)) return;
 
 			var words = inputField.text.Split(' ');
-			if (words[0] == "/w" && words.Length > 2)
-			{
-				_chatClient.SendPrivateMessage(words[1], string.Join(" ", words, 2, words.Length - 2));
-			}
-			else
-			{
-				_chatClient.PublishMessage(_channels[_currentChat], inputField.text);
-			}
 			
-			if(words[0] == "/openDoors")
-				ServerManager.Instance.RequestRPC("RequestOpenAllDoors");
+			switch (words[0])
+			{
+				case "/openDoors":
+					ServerManager.Instance.RequestRPC("RequestOpenAllDoors");
+					inputField.text = "";
+					EventSystem.current.SetSelectedGameObject(null);
+					EventSystem.current.SetSelectedGameObject(inputField.gameObject);
+					return;
+				case "/w" when words.Length > 2:
+					_chatClient.SendPrivateMessage(words[1], string.Join(" ", words, 2, words.Length - 2));
+					break;
+				default:
+					_chatClient.PublishMessage(_channels[_currentChat], inputField.text);
+					break;
+			}
 
 			inputField.text = "";
 
