@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
 using ProjectNet.Core.CameraScripts;
@@ -17,7 +18,7 @@ namespace ProjectNet.Core.Managers
 		private Dictionary<PlayerCharacter, Player> _characterPlayers = new Dictionary<PlayerCharacter, Player>();
 		private Player _server;
 		
-		public GameManager gameManager = GameManager.Instance;
+		public GameManager gameManager;
 
 		public static ServerManager Instance { get; private set; }
 
@@ -35,6 +36,12 @@ namespace ProjectNet.Core.Managers
 				Destroy(gameObject);
 			}
 		}
+
+		private void Start()
+		{
+			gameManager = GameManager.Instance;
+		}
+		
 
 		[PunRPC]
 		public void RequestConnect(Player client)
