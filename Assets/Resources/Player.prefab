@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  bulletSpawnPoint: {fileID: 5175669851154252885}
 --- !u!114 &6999078975961956452
 MonoBehaviour:
   m_ObjectHideFlags: 0

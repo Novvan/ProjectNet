@@ -73,10 +73,10 @@ namespace ProjectNet.Core.Managers
 		{
 			if (_playerCharacters.ContainsKey(client))
 			{
-				_playerCharacters[client].Move(dir);
+				_playerCharacters[client].Shoot(dir);
 			}
 		}
-
+		
 		[PunRPC]
 		public void SetCamera(int id, Vector3 offset)
 		{

@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using ProjectNet.Core.Interfaces;
+using ProjectNet.Core.BulletComponents;
 using UnityEngine;
 
 namespace ProjectNet.Core.Character
@@ -32,8 +33,8 @@ namespace ProjectNet.Core.Character
 		}
 		public void Shoot(Vector2 dir) 
 		{
-			var bullet = PhotonNetwork.Instantiate("Bullet",bulletSpawnPoint.position,Quaternion.identity);
-			bullet.GetComponent<Bullet.Bullet>();
+			var obj = PhotonNetwork.Instantiate("Bullet",bulletSpawnPoint.position,Quaternion.identity);
+			obj.GetComponent<Bullet>().direction = dir;
 		}
 	}
 }
