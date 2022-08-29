@@ -15,13 +15,12 @@ namespace ProjectNet.Core.Character
 		public float speed = 2;
 		public Transform bulletSpawnPoint;
 		public Transform graphics;
+		public bool isDead = false;
 
 		private Rigidbody2D _rb;
 		private PlayerCharacterView _playerCharacterView;
 		private float _lastLookDirection = 1;
 		private int _lives = 3;
-
-		public Action OnDeath;
 
 		#endregion
 
@@ -75,7 +74,7 @@ namespace ProjectNet.Core.Character
 		{
 			if (col.gameObject.CompareTag("Enemy"))
 			{
-				ServerManager.Instance.RequestRPC("RequestDamage", photonView.ViewID);
+				ServerManager.Instance.RequestRPC("RequestDamage", ServerManager.Instance.GetPlayer(this));
 			}
 		}
 
@@ -85,7 +84,7 @@ namespace ProjectNet.Core.Character
 			_lives--;
 			if (_lives <= 0)
 			{
-				ServerManager.Instance.RequestRPC("RequestDeath", photonView.ViewID);
+				ServerManager.Instance.RequestRPC("RequestDeath", ServerManager.Instance.GetPlayer(this));
 				PhotonNetwork.Destroy(gameObject);
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;

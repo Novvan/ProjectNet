@@ -13,15 +13,13 @@ namespace ProjectNet.Core.Character
 	{
 		#region Variables
 
-		public bool isDead = false;
-
-
 		private Player _localClient;
 		private PlayerCharacterInputActions _playerInputActions;
 		private InputAction _move, _fire, _talk;
 		private Vector2 _moveDirection;
 		private bool _isWriting;
 		private Recorder _recorder;
+		private bool _isDead = false;
 
 		#endregion
 
@@ -66,7 +64,8 @@ namespace ProjectNet.Core.Character
 			_recorder.TransmitEnabled = _talk.IsPressed();
 
 			if (GameManager.Instance.GameState != GameState.Play) return;
-			if (isDead) return;
+			_isDead = ServerManager.Instance.GetPlayerCharacter(_localClient).isDead;
+			if (_isDead) return;
 			
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered)
@@ -78,8 +77,8 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			if (GameManager.Instance.GameState != GameState.Play) return;
-			if (isDead) return;
+			if (_isDead) return;
+			if (ServerManager.Instance.GetPlayerCharacter(_localClient).isDead) return;
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}

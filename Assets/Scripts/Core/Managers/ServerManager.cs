@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
-using ProjectNet.Core.BulletComponents;
 using ProjectNet.Core.CameraScripts;
 using ProjectNet.Core.Character;
 using ProjectNet.Core.DoorComponents;
@@ -15,6 +14,7 @@ namespace ProjectNet.Core.Managers
 		[SerializeField] private CameraController cameraController;
 
 		private Dictionary<Player, PlayerCharacter> _playerCharacters = new Dictionary<Player, PlayerCharacter>();
+		private Dictionary<PlayerCharacter, Player> _characterPlayers = new Dictionary<PlayerCharacter, Player>();
 		private Player _server;
 
 		public static ServerManager Instance { get; private set; }
@@ -53,7 +53,17 @@ namespace ProjectNet.Core.Managers
 			if (character != null)
 			{
 				_playerCharacters[client] = character;
+				_characterPlayers[character] = client;
 			}
+		}
+
+		public Player GetPlayer(PlayerCharacter playerCharacter)
+		{
+			return _characterPlayers[playerCharacter];
+		}
+		public PlayerCharacter GetPlayerCharacter(Player player)
+		{
+			return _playerCharacters[player];
 		}
 
 		[PunRPC]
@@ -70,38 +80,48 @@ namespace ProjectNet.Core.Managers
 				_playerCharacters[client].Move(dir);
 			}
 		}
-		
+
 		[PunRPC]
-		public void RequestDamage(int viewId)
+		public void RequestDamage(Player client)
 		{
-			foreach (var client in _playerCharacters)	
+			if(_playerCharacters.ContainsKey(client))
 			{
-				if (client.Value.photonView.ViewID == viewId)
-				{
-					client.Value.TakeDamage();
-				}
+				_playerCharacters[client].TakeDamage();
 			}
+			
+			// foreach (var client in _playerCharacters)
+			// {
+			// 	if (client.Value.photonView.ViewID == viewId)
+			// 	{
+			// 		client.Value.TakeDamage();
+			// 	}
+			// }
 		}
-		
-		
+
+
 		[PunRPC]
-		public void RequestDeath(int viewId)
+		public void RequestDeath(Player client)
 		{
-			foreach (var client in _playerCharacters)	
+			if (_playerCharacters.ContainsKey(client))
 			{
-				if (client.Value.photonView.ViewID == viewId)
-				{
-					client.Value.TakeDamage();
-				}
+				_playerCharacters[client].isDead = true;
 			}
+			
+			// foreach (var client in _playerCharacters)
+			// {
+			// 	if (client.Value.photonView.ViewID == viewId)
+			// 	{
+			// 		client.Value.TakeDamage();
+			// 	}
+			// }
 		}
-		
+
 		[PunRPC]
 		public void RequestEnemyMove(GameObject enemy, Vector2 dir)
 		{
 			enemy.GetComponent<Enemy>().Move(dir);
 		}
-		
+
 		[PunRPC]
 		public void RequestResetEnemyMove(GameObject enemy)
 		{
@@ -134,7 +154,7 @@ namespace ProjectNet.Core.Managers
 				doorComponent.OpenDoor();
 			}
 		}
-		
+
 		[PunRPC]
 		public void RequestOpenAllDoors()
 		{
