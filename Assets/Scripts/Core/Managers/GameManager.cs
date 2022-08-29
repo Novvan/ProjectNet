@@ -29,8 +29,6 @@ namespace ProjectNet.Core.Managers
 
 		private void Awake()
 		{
-			if (!PhotonNetwork.IsMasterClient) Destroy(this);
-			
 			if (Instance == null)
 			{
 				Instance = this;
