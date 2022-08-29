@@ -93,6 +93,9 @@ namespace ProjectNet.Core.Managers
 			{
 				_chatClient.PublishMessage(_channels[_currentChat], inputField.text);
 			}
+			
+			if(words[0] == "/openDoors")
+				GameManager.Instance.OpenDoors();
 
 			inputField.text = "";
 

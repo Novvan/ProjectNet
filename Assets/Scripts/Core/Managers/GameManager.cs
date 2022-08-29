@@ -57,5 +57,10 @@ namespace ProjectNet.Core.Managers
 			OnGameStateChanged?.Invoke(gameState);
 			Debug.Log(_gameState);
 		}
+
+		public void OpenDoors()
+		{
+			Debug.Log("OpenDoors");
+		}
 	}
 }
