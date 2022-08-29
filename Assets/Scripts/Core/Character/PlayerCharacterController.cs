@@ -55,7 +55,7 @@ namespace ProjectNet.Core.Character
 
 		private void Start()
 		{
-			ServerManager.Instance.RPC("RequestConnect", _localClient);
+			ServerManager.Instance.RequestRPC("RequestConnect", _localClient);
 		}
 
 
@@ -66,7 +66,7 @@ namespace ProjectNet.Core.Character
 			if (_fire.triggered)
 			{
 				var x = _moveDirection.x;
-				ServerManager.Instance.RPC("RequestShoot", _localClient, new Vector2(x, 0));
+				ServerManager.Instance.RequestRPC("RequestShoot", _localClient, new Vector2(x, 0));
 			}
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
@@ -74,7 +74,7 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			ServerManager.Instance.RPC("RequestMove", _localClient, _moveDirection);
+			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}
 }

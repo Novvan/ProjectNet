@@ -13,7 +13,7 @@ namespace ProjectNet.Core.Pickups
 		{
 			base.OnPickUp(whoPickedUp);
 			if (_done) return;
-			ServerManager.Instance.RPC("RequestAddKey");
+			ServerManager.Instance.RequestRPC("RequestAddKey");
 			_done = true;
 			PhotonNetwork.Destroy(gameObject);
 		}

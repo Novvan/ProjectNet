@@ -55,7 +55,7 @@ namespace ProjectNet.Core.Managers
 		}
 
 		[PunRPC]
-		public void RPC(string rpcName, params object[] p)
+		public void RequestRPC(string rpcName, params object[] p)
 		{
 			photonView.RPC(rpcName, _server, p);
 		}

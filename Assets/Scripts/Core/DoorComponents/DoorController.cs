@@ -24,7 +24,7 @@ namespace ProjectNet.Core.DoorComponents
 			if (_door.IsOpened) return;
 			if (col.gameObject.CompareTag("Player"))
 			{
-				ServerManager.Instance.RPC("RequestOpenDoor", this.gameObject);
+				ServerManager.Instance.RequestRPC("RequestOpenDoor", this.gameObject);
 			}
 		}
 	}

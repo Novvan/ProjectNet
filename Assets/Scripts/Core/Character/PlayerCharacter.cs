@@ -32,7 +32,11 @@ namespace ProjectNet.Core.Character
 			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
 			_rb.velocity = direction.normalized * speed;
 
-			if (_rb.velocity.x != 0) _lastLookDirection = direction.normalized.x;
+			if (_rb.velocity.x != 0) 
+			{
+				_lastLookDirection = direction.normalized.x;
+				_playerCharacterView.SetSpriteOrientation(_lastLookDirection);
+			}
 		}
 
 		public void Shoot(Vector2 dir)
