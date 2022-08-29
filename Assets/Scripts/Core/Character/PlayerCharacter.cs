@@ -33,6 +33,7 @@ namespace ProjectNet.Core.Character
 
 		public void Move(Vector2 direction)
 		{
+			if (isDead) return;
 			_rb.velocity = direction.normalized * speed;
 
 			if (_rb.velocity != Vector2.zero)
@@ -85,6 +86,7 @@ namespace ProjectNet.Core.Character
 			if (_lives <= 0)
 			{
 				_playerCharacterView.SetDead(true);
+				_rb.velocity = Vector2.zero;
 				ServerManager.Instance.RequestRPC("RequestDeath", ServerManager.Instance.GetPlayer(this));
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;
