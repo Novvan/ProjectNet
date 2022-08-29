@@ -65,7 +65,10 @@ namespace ProjectNet.Core.Character
 
 			if (GameManager.Instance.GameState != GameState.Play) return;
 			_isDead = ServerManager.Instance.GetPlayerCharacter(_localClient).isDead;
-			if (_isDead) return;
+			if (_isDead)
+			{
+				Debug.Log("Player is dead");
+			}
 			
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered)

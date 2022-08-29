@@ -29,6 +29,8 @@ namespace ProjectNet.Core.Managers
 
 		private void Awake()
 		{
+			if (!PhotonNetwork.IsMasterClient) Destroy(this);
+			
 			if (Instance == null)
 			{
 				Instance = this;
@@ -37,13 +39,11 @@ namespace ProjectNet.Core.Managers
 			{
 				Destroy(this);
 			}
-
 			DontDestroyOnLoad(this);
 		}
 
 		private void Start()
 		{
-			if (!PhotonNetwork.IsMasterClient) Destroy(this);
 			SetGameState(GameState.Waiting);
 		}
 
