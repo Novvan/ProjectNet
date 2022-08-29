@@ -19,7 +19,6 @@ namespace ProjectNet.Core.Character
 
 		#endregion
 
-
 		private void Awake()
 		{
 			if (!photonView.IsMine) Destroy(this);
