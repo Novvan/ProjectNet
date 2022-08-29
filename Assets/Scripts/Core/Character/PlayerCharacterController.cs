@@ -65,7 +65,7 @@ namespace ProjectNet.Core.Character
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered) Debug.Log("hola");
 			if (_recorder == null) return;
-			if (Input.GetKeyDown(KeyCode.P))
+			if (Input.GetKey(KeyCode.P))
 			{
 				Debug.Log("Pressed P");
 				_recorder.TransmitEnabled = true;
