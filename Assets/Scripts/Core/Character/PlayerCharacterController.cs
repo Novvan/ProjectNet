@@ -63,11 +63,16 @@ namespace ProjectNet.Core.Character
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
 
-			if (GameManager.Instance.GameState != GameState.Play) return;
+			if (GameManager.Instance.GameState != GameState.Play)
+			{
+				Debug.Log("GameState != Play");
+				return;
+			}
 			_isDead = ServerManager.Instance.GetPlayerCharacter(_localClient).isDead;
 			if (_isDead)
 			{
 				Debug.Log("Player is dead");
+				return;
 			}
 			
 			_moveDirection = _move.ReadValue<Vector2>();
@@ -80,8 +85,16 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			if (GameManager.Instance.GameState != GameState.Play) return;
-			if (_isDead) return;
+			if (GameManager.Instance.GameState != GameState.Play)
+			{
+				Debug.Log("LATE GameState != Play");
+				return;
+			}
+			if (_isDead)
+			{
+				Debug.Log("LATE Player is dead");
+				return;
+			}
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}
