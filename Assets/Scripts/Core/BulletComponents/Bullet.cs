@@ -1,15 +1,13 @@
-﻿using System;
-using Photon.Pun;
+﻿using Photon.Pun;
 using ProjectNet.Core.Interfaces;
-using ProjectNet.Core.Managers;
 using UnityEngine;
 
 namespace ProjectNet.Core.BulletComponents
 {
 	public class Bullet : MonoBehaviourPun, IMove
 	{
-		public Vector2 direction;
 		public float speed;
+		private Vector2 _direction;
 		private Rigidbody2D _rb;
 
 		private void Awake()
@@ -20,9 +18,14 @@ namespace ProjectNet.Core.BulletComponents
 
 		private void Start()
 		{
-			if(direction.x <= 0) gameObject.transform.localScale = new Vector3(-1, 1, 1);
+			if(_direction.x <= 0) gameObject.transform.localScale = new Vector3(-1, 1, 1);
 			
-			Move(direction);
+			Move(_direction);
+		}
+		
+		public void SetDirection(Vector2 dir)
+		{
+			_direction = dir;
 		}
 
 		public void Move(Vector2 dir)

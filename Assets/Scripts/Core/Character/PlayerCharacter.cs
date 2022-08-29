@@ -1,6 +1,7 @@
 ﻿using Photon.Pun;
 using ProjectNet.Core.Interfaces;
 using ProjectNet.Core.BulletComponents;
+using ProjectNet.Core.Managers;
 using UnityEngine;
 
 namespace ProjectNet.Core.Character
@@ -31,10 +32,25 @@ namespace ProjectNet.Core.Character
 			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
 			_rb.velocity = direction.normalized * speed;
 		}
-		public void Shoot(Vector2 dir) 
+
+		public void Shoot(Vector2 dir)
 		{
-			var obj = PhotonNetwork.Instantiate("Bullet",bulletSpawnPoint.position,Quaternion.identity);
-			obj.GetComponent<Bullet>().direction = dir;
+			if (dir == Vector2.zero) return;
+
+			var obj = PhotonNetwork.Instantiate(GameManager.Instance.gameSettings.bulletPrefab
+				.name, bulletSpawnPoint.position, Quaternion.identity);
+			if (obj == null)
+			{
+				Debug.LogError("Bullet prefab not found");
+				return;
+			}
+			var bullet = obj.GetComponent<Bullet>();
+			if (bullet == null)
+			{
+				Debug.LogError("Bullet component not found");
+				return;
+			}
+			bullet.SetDirection(dir);
 		}
 	}
 }

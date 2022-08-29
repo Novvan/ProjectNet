@@ -15,3 +15,5 @@ MonoBehaviour:
   maxPlayers: 2
   playerPrefab: {fileID: 424704637332124900, guid: 89f8ea72bf3fb7f439134c845b2c6f5d,
     type: 3}
+  bulletPrefab: {fileID: 6419128492824727378, guid: 600d5e25a3d75a549924090440965397,
+    type: 3}

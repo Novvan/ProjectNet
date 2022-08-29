@@ -6,6 +6,6 @@ namespace ProjectNet.ScriptableObjects.Game
 	public class GameSettings : ScriptableObject
 	{
 		public byte maxPlayers = 2;
-		public GameObject playerPrefab;
+		public GameObject playerPrefab, bulletPrefab;
 	}
 }
