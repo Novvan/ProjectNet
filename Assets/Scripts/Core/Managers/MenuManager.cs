@@ -77,7 +77,7 @@ namespace ProjectNet.Core.Managers
 		{
 			screenNameInputField.text = "Server";
 			roomNameInputField.text = Random.Range(100, 300).ToString();
-			FindObjectOfType<PhotonVoiceNetwork>().PrimaryRecorder = null;
+			// FindObjectOfType<PhotonVoiceNetwork>().PrimaryRecorder = null;
 			OnLoginButtonClick();
 		}
 

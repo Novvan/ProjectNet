@@ -30,7 +30,8 @@ namespace ProjectNet.Core.Character
 
 		private void Update()
 		{
-			SetTalking(_recorder.TransmitEnabled);
+			// if (_recorder == null) return; 
+			// SetTalking(_recorder.TransmitEnabled);
 		}
 
 		public void SetPlayerNickname(string nickname)
