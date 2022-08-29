@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Interfaces/IPickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Managers/ChatManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Pickups/Key.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Triggers/WinTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Voice/MenuMicSelect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Tools.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ProjectNet_clone_0/Assets/Third-party/Photon/PhotonUnityNetworking/Code/PhotonNetworkPart.cs" root0="SKIP_HIGHLIGHTING" />
@@ -92,7 +97,7 @@
       <workItem from="1661635362119" duration="7557000" />
       <workItem from="1661728744955" duration="7935000" />
       <workItem from="1661738552251" duration="13464000" />
-      <workItem from="1661787293789" duration="22945000" />
+      <workItem from="1661787293789" duration="24886000" />
     </task>
     <servers />
   </component>
