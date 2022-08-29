@@ -232,13 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 1
-    Name: isMirror
-  - Type: 4
-    SynchronizeType: 0
-    Name: walking
+  m_SynchronizeParameters: []
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -255,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  lifeSpan: 0.75
+  lifeSpan: 2
 --- !u!114 &3567548363752671693
 MonoBehaviour:
   m_ObjectHideFlags: 0
