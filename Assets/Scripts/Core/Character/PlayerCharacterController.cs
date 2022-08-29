@@ -63,18 +63,18 @@ namespace ProjectNet.Core.Character
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
 			
-			var playerChar = ServerManager.Instance.GetPlayerCharacter(_localClient);
-			if (playerChar == null)
-			{
-				Debug.Log("playerChar == null");
-				return;
-			}
-			_isDead = playerChar.isDead;
-			if (_isDead)
-			{
-				Debug.Log("Player is dead");
-				return;
-			}
+			// var playerChar = ServerManager.Instance.GetPlayerCharacter(_localClient);
+			// if (playerChar == null)
+			// {
+			// 	Debug.Log("playerChar == null");
+			// 	return;
+			// }
+			// _isDead = playerChar.isDead;
+			// if (_isDead)
+			// {
+			// 	Debug.Log("Player is dead");
+			// 	return;
+			// }
 			
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered)
@@ -86,11 +86,11 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			if (_isDead)
-			{
-				Debug.Log("LATE Player is dead");
-				return;
-			}
+			// if (_isDead)
+			// {
+			// 	Debug.Log("LATE Player is dead");
+			// 	return;
+			// }
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}
