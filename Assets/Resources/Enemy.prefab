@@ -16,15 +16,13 @@ GameObject:
   - component: {fileID: 35343856280896892}
   - component: {fileID: 6789822960109467334}
   - component: {fileID: -623928078131334759}
-  - component: {fileID: 2344341343974741186}
-  - component: {fileID: 6999078975961956452}
   - component: {fileID: 8930672083784442942}
   - component: {fileID: 5824828102510559806}
   - component: {fileID: 3518712112464938521}
   - component: {fileID: 6222882705708747720}
   m_Layer: 6
-  m_Name: Player
-  m_TagString: Player
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,7 +87,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: -4763319155423742589, guid: 3e03e61124469474692663635e666c59,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -218,41 +216,11 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 2
+    SynchronizeType: 0
     Name: Mirror
-  - Type: 4
-    SynchronizeType: 2
-    Name: Walking
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
---- !u!114 &2344341343974741186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424704637332124900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6187af020682e9840b7f9023c1f3ee72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  bulletSpawnPoint: {fileID: 5175669851154252885}
---- !u!114 &6999078975961956452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424704637332124900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcb2c966401cb0045bb9c5d59169900b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nicknameText: {fileID: 4894592625333168774}
 --- !u!95 &8930672083784442942
 Animator:
   serializedVersion: 4

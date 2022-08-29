@@ -20,14 +20,12 @@ namespace ProjectNet.Core.Character
 		public TMP_Text nicknameText;
 		private Animator _animator;
 		private Recorder _recorder;
-		public SpriteRenderer _spriteRenderer;
 
 		private void Awake()
 		{
 			if (!photonView.IsMine) Destroy(this);
 			_animator = GetComponent<Animator>();
 			_recorder = PhotonVoiceNetwork.Instance.PrimaryRecorder;
-			_spriteRenderer = GetComponent<SpriteRenderer>();
 		}
 
 		private void Update()
@@ -35,19 +33,20 @@ namespace ProjectNet.Core.Character
 			// if (_recorder == null) return; 
 			// SetTalking(_recorder.TransmitEnabled);
 		}
+		public void SetMirror(bool b) 
+		{
+			_animator.SetBool("Mirror", b);
+		}
+		public void SetWalk(bool b) 
+		{
+			_animator.SetBool("Walking", b);
+		}
 
 		public void SetPlayerNickname(string nickname)
 		{
 			_playerName = nickname;
 			nicknameText.text = _playerName;
 			photonView.RPC("UpdateNickname", RpcTarget.OthersBuffered, _playerName);
-		}
-		public void SetSpriteOrientation(float b) 
-		{
-			bool bol;
-			if(b < 0)bol = true;
-			else bol = false;
-			photonView.RPC("UpdateFlip", RpcTarget.OthersBuffered, bol);
 		}
 
 		public void SetTalking(bool isActive)
@@ -66,11 +65,6 @@ namespace ProjectNet.Core.Character
 		public void UpdateNickname(string playerName)
 		{
 			nicknameText.text = playerName;
-		}
-		[PunRPC]
-		public void UpdateFlip(bool b) 
-		{
-			_spriteRenderer.flipX = b;
 		}
 
 		[PunRPC]

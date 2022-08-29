@@ -30,13 +30,17 @@ namespace ProjectNet.Core.Character
 		public void Move(Vector2 direction)
 		{
 			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
+			
 			_rb.velocity = direction.normalized * speed;
 
-			if (_rb.velocity.x != 0) 
+			if (_rb.velocity.x != 0)
 			{
+				_playerCharacterView.SetWalk(true);
 				_lastLookDirection = direction.normalized.x;
-				_playerCharacterView.SetSpriteOrientation(_lastLookDirection);
+				if (_lastLookDirection < 0) _playerCharacterView.SetMirror(true);
+				else _playerCharacterView.SetMirror(false);
 			}
+			else _playerCharacterView.SetWalk(false);
 		}
 
 		public void Shoot(Vector2 dir)
