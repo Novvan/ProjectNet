@@ -77,8 +77,8 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
+			if (GameManager.Instance.GameState != GameState.Play) return;
 			if (_isDead) return;
-			if (ServerManager.Instance.GetPlayerCharacter(_localClient).isDead) return;
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
 	}

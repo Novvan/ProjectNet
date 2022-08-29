@@ -50,11 +50,9 @@ namespace ProjectNet.Core.Managers
 		{
 			var obj = PhotonNetwork.Instantiate(GameManager.Instance.gameSettings.playerPrefab.name, Vector3.zero, Quaternion.identity);
 			var character = obj.GetComponent<PlayerCharacter>();
-			if (character != null)
-			{
-				_playerCharacters[client] = character;
-				_characterPlayers[character] = client;
-			}
+			if (character == null) return;
+			_playerCharacters[client] = character;
+			_characterPlayers[character] = client;
 		}
 
 		public Player GetPlayer(PlayerCharacter playerCharacter)
