@@ -30,7 +30,7 @@ namespace ProjectNet.Core.Character
 
 		private void Update()
 		{
-			if(_recorder.TransmitEnabled) SetTalking(_recorder.TransmitEnabled);
+			SetTalking(_recorder.TransmitEnabled);
 		}
 
 		public void SetPlayerNickname(string nickname)
@@ -42,7 +42,7 @@ namespace ProjectNet.Core.Character
 
 		public void SetTalking(bool isActive)
 		{
-
+			Debug.Log("PlayerView: SetTalking " + isActive);
 			photonView.RPC("UpdateTalking", RpcTarget.OthersBuffered, isActive);
 		}
 
