@@ -16,10 +16,10 @@ namespace ProjectNet.Core.Managers
 		private Dictionary<Player, PlayerCharacter> _playerCharacters = new Dictionary<Player, PlayerCharacter>();
 		private Dictionary<PlayerCharacter, Player> _characterPlayers = new Dictionary<PlayerCharacter, Player>();
 		private Player _server;
+		
+		public GameManager gameManager = GameManager.Instance;
 
 		public static ServerManager Instance { get; private set; }
-
-		public Player GetServer => _server;
 
 		public bool IsServer => PhotonNetwork.IsMasterClient;
 

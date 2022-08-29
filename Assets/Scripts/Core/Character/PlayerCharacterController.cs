@@ -63,7 +63,7 @@ namespace ProjectNet.Core.Character
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
 
-			if (GameManager.Instance.GameState != GameState.Play)
+			if (ServerManager.Instance.gameManager.GameState != GameState.Play)
 			{
 				Debug.Log("GameState != Play");
 				return;
@@ -85,7 +85,7 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			if (GameManager.Instance.GameState != GameState.Play)
+			if (ServerManager.Instance.gameManager.GameState != GameState.Play)
 			{
 				Debug.Log("LATE GameState != Play");
 				return;
