@@ -60,20 +60,25 @@ namespace ProjectNet.Core.Character
 
 		private void Update()
 		{
+
 			if (_isWriting) return;
+			if (_recorder == null) return;
+			_recorder.TransmitEnabled = _talk.IsPressed();
+
+			if (GameManager.Instance.GameState != GameState.Play) return;
 			if (isDead) return;
+			
 			_moveDirection = _move.ReadValue<Vector2>();
 			if (_fire.triggered)
 			{
 				var x = _moveDirection.x;
 				ServerManager.Instance.RequestRPC("RequestShoot", _localClient, new Vector2(x, 0));
 			}
-			if (_recorder == null) return;
-			_recorder.TransmitEnabled = _talk.IsPressed();
 		}
 
 		private void FixedUpdate()
 		{
+			if (GameManager.Instance.GameState != GameState.Play) return;
 			if (isDead) return;
 			ServerManager.Instance.RequestRPC("RequestMove", _localClient, _moveDirection);
 		}
