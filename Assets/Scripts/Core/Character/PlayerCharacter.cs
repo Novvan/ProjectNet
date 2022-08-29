@@ -14,7 +14,7 @@ namespace ProjectNet.Core.Character
 
 		public float speed = 2;
 		public Transform bulletSpawnPoint;
-		public Transform graphics, canvas;
+		public Transform graphics;
 		public bool isDead = false;
 
 		private Rigidbody2D _rb;
@@ -87,7 +87,6 @@ namespace ProjectNet.Core.Character
 			{
 				_playerCharacterView.SetDead(true);
 				_rb.velocity = Vector2.zero;
-				canvas.gameObject.SetActive(false);
 				ServerManager.Instance.RequestRPC("RequestDeath", ServerManager.Instance.GetPlayer(this));
 				return;
 			}
