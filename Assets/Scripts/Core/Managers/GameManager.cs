@@ -52,5 +52,10 @@ namespace ProjectNet.Core.Managers
 		{
 			Destroy(mainDoor);
 		}
+
+		public void GameOver()
+		{
+			Debug.Log("GameOver");
+		}
 	}
 }

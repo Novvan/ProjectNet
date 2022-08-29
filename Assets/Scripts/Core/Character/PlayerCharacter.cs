@@ -87,7 +87,9 @@ namespace ProjectNet.Core.Character
 			{
 				_playerCharacterView.SetDead(true);
 				_rb.velocity = Vector2.zero;
+				canvas.gameObject.SetActive(false);
 				ServerManager.Instance.RequestRPC("RequestDeath", ServerManager.Instance.GetPlayer(this));
+				return;
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;
 		}

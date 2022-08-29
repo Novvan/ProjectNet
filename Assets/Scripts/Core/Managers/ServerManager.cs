@@ -100,6 +100,18 @@ namespace ProjectNet.Core.Managers
 			if (!_playerCharacters.ContainsKey(client)) return;
 			if (!_playerCharacters[client].isDead)
 				_playerCharacters[client].isDead = true;
+
+			var deadAmount = 0;
+			foreach (var player in _playerCharacters.Keys)
+			{
+				if (_playerCharacters[player].isDead)
+					deadAmount++;
+			}
+			
+			if (deadAmount == _playerCharacters.Count)
+			{
+				gameManager.GameOver();
+			}
 		}
 
 		[PunRPC]
