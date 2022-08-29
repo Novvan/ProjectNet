@@ -10,6 +10,7 @@ namespace ProjectNet.Core.Character
 		#region Variables
 
 		public float speed = 2;
+		public Transform bulletSpawnPoint;
 
 		private Rigidbody2D _rb;
 		private PlayerCharacterView _playerCharacterView;
@@ -28,6 +29,11 @@ namespace ProjectNet.Core.Character
 		{
 			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
 			_rb.velocity = direction.normalized * speed;
+		}
+		public void Shoot(Vector2 dir) 
+		{
+			var bullet = PhotonNetwork.Instantiate("Bullet",bulletSpawnPoint.position,Quaternion.identity);
+			bullet.GetComponent<Bullet.Bullet>();
 		}
 	}
 }
