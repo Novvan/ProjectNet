@@ -28,8 +28,6 @@ namespace ProjectNet.Core.EnemyComponents
 
 		private void Update()
 		{
-			if (GameManager.Instance.GameState != GameState.Play) return;
-			
 			if (_parent == null) return;
 			if (_player == null) return;
 

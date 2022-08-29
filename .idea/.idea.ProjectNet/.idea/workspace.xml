@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/EnemyComponents/TriggerRadiusComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EnemyComponents/TriggerRadiusComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/ServerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,7 @@
       <workItem from="1661635362119" duration="7557000" />
       <workItem from="1661728744955" duration="7935000" />
       <workItem from="1661738552251" duration="13464000" />
-      <workItem from="1661787293789" duration="17910000" />
+      <workItem from="1661787293789" duration="18870000" />
     </task>
     <servers />
   </component>

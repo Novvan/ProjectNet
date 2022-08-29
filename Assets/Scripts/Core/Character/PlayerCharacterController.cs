@@ -62,12 +62,7 @@ namespace ProjectNet.Core.Character
 			if (_isWriting) return;
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
-
-			if (ServerManager.Instance.gameManager.GameState != GameState.Play)
-			{
-				Debug.Log("GameState != Play");
-				return;
-			}
+			
 			var playerChar = ServerManager.Instance.GetPlayerCharacter(_localClient);
 			if (playerChar == null)
 			{
@@ -91,11 +86,6 @@ namespace ProjectNet.Core.Character
 
 		private void FixedUpdate()
 		{
-			if (ServerManager.Instance.gameManager.GameState != GameState.Play)
-			{
-				Debug.Log("LATE GameState != Play");
-				return;
-			}
 			if (_isDead)
 			{
 				Debug.Log("LATE Player is dead");
