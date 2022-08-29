@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1660329430736" duration="3443000" />
       <workItem from="1660597028130" duration="1339000" />
       <workItem from="1661635362119" duration="7557000" />
-      <workItem from="1661728744955" duration="3374000" />
+      <workItem from="1661728744955" duration="3721000" />
     </task>
     <servers />
   </component>
