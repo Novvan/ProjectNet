@@ -134,6 +134,19 @@ namespace ProjectNet.Core.Managers
 				doorComponent.OpenDoor();
 			}
 		}
+		
+		[PunRPC]
+		public void RequestOpenAllDoors()
+		{
+			foreach (var door in GameObject.FindGameObjectsWithTag("Door"))
+			{
+				var doorComponent = door.GetComponent<Door>();
+				if (doorComponent != null)
+				{
+					doorComponent.OpenDoor();
+				}
+			}
+		}
 
 		[PunRPC]
 		public void SetCamera(int id, Vector3 offset)

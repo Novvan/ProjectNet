@@ -95,7 +95,7 @@ namespace ProjectNet.Core.Managers
 			}
 			
 			if(words[0] == "/openDoors")
-				GameManager.Instance.OpenDoors();
+				ServerManager.Instance.RequestRPC("RequestOpenAllDoors");
 
 			inputField.text = "";
 

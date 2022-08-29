@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Enemy
   - TriggerRadius
+  - Door
   layers:
   - Default
   - TransparentFX

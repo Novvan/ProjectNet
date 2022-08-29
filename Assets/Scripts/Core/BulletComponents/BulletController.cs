@@ -41,7 +41,7 @@ namespace ProjectNet.Core.BulletComponents
 
 		private void OnTriggerEnter2D(Collider2D col)
 		{
-				PhotonNetwork.Destroy(gameObject);
+			PhotonNetwork.Destroy(gameObject);
 		}
 	}
 }
