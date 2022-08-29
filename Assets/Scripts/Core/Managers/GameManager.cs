@@ -13,7 +13,7 @@ namespace ProjectNet.Core.Managers
 		Defeat
 	}
 
-	public class GameManager : MonoBehaviourPunCallbacks
+	public class GameManager : MonoBehaviourPun
 	{
 		public GameSettings gameSettings;
 		public int keys;
@@ -50,9 +50,10 @@ namespace ProjectNet.Core.Managers
 		private void Update()
 		{
 			if (PhotonNetwork.CurrentRoom.PlayerCount - 1 == gameSettings.maxPlayers && _gameState == GameState.Waiting)
-				SetGameState(GameState.Play);
+				photonView.RPC("SetGameState", RpcTarget.All, GameState.Play);
 		}
 
+		[PunRPC]
 		private void SetGameState(GameState gameState)
 		{
 			_gameState = gameState;
