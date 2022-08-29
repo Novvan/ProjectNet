@@ -4,9 +4,20 @@
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Bullet/Bullet.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/BulletComponents/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Idle1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Shoot.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Shoot.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Spawn1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Walk1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OuterBudy/OuterBudy_Walk1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +46,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\AppData\Unity\Editors\2019.4.40f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="E:\AppData\Unity\Editors\2021.3.8f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Ian\Documents\Unity Projects\ProjectNet&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Ian\Documents\Unity Projects\ProjectNet" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -94,6 +105,7 @@
       <workItem from="1661635362119" duration="7557000" />
       <workItem from="1661728744955" duration="7935000" />
       <workItem from="1661738552251" duration="13464000" />
+      <workItem from="1661787293789" duration="2109000" />
     </task>
     <servers />
   </component>

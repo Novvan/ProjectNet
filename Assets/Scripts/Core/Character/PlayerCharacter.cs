@@ -13,11 +13,12 @@ namespace ProjectNet.Core.Character
 
 		public float speed = 2;
 		public Transform bulletSpawnPoint;
+		public Transform graphics;
 
 		private Rigidbody2D _rb;
 		private PlayerCharacterView _playerCharacterView;
 		private float _lastLookDirection = 1;
-		
+
 		#endregion
 
 		private void Awake()
@@ -29,16 +30,16 @@ namespace ProjectNet.Core.Character
 
 		public void Move(Vector2 direction)
 		{
-			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
-			
 			_rb.velocity = direction.normalized * speed;
 
-			if (_rb.velocity.x != 0)
+			if (_rb.velocity != Vector2.zero)
 			{
 				_playerCharacterView.SetWalk(true);
-				_lastLookDirection = direction.normalized.x;
-				if (_lastLookDirection < 0) _playerCharacterView.SetMirror(true);
-				else _playerCharacterView.SetMirror(false);
+				
+				if (direction.normalized.x != 0)
+					_lastLookDirection = direction.normalized.x;
+
+				graphics.rotation = Quaternion.Euler(0, _lastLookDirection < 0 ? 180 : 0, 0);
 			}
 			else _playerCharacterView.SetWalk(false);
 		}
