@@ -89,7 +89,7 @@ namespace ProjectNet.Core.Character
 				gameObject.GetComponent<CircleCollider2D>().enabled = false;
 				gameObject.GetComponent<BoxCollider2D>().enabled = false;
 				graphics.gameObject.SetActive(false);
-				canvas.gameObject.SetActive(false);
+				// canvas.gameObject.SetActive(false);
 				this.gameObject.tag = "Phantom";
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;
