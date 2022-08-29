@@ -5,45 +5,31 @@ using UnityEngine;
 
 namespace ProjectNet.Core.BulletComponents
 {
-	public class Bullet : MonoBehaviourPun, IMove
+	public class Bullet : MonoBehaviourPun
 	{
 		public float speed = 15, lifeSpan = 3;
 
 		private Vector2 _direction;
-		private Rigidbody2D _rb;
 		private Animator _animator;
-		private float _counter;
+		private static readonly int IsMirror = Animator.StringToHash("isMirror");
+
+		public Vector2 Direction => _direction;
 
 		private void Awake()
 		{
-			if (!PhotonNetwork.IsMasterClient) Destroy(this);
-			_rb = GetComponent<Rigidbody2D>();
 			_animator = GetComponent<Animator>();
-		}
-
-		private void Start()
-		{
-			Move(_direction);
-		}
-
-		private void Update()
-		{
-			_counter += Time.deltaTime;
-			if (_counter >= lifeSpan)
-			{
-				PhotonNetwork.Destroy(gameObject);
-			}
 		}
 
 		public void SetDirection(Vector2 dir)
 		{
 			_direction = dir;
-			// _animator.SetBool("isMirror", dir.x < 0);
+			photonView.RPC("UpdateBulletAnimator", RpcTarget.All);
 		}
 
-		public void Move(Vector2 dir)
+		[PunRPC]
+		public void UpdateBulletAnimator()
 		{
-			_rb.velocity = dir * speed;
+			_animator.SetBool(IsMirror, _direction.x <= 0);
 		}
 	}
 }
