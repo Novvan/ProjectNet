@@ -110,7 +110,7 @@ namespace ProjectNet.Core.Managers
 			
 			if (deadAmount == _playerCharacters.Count)
 			{
-				gameManager.GameOver();
+				photonView.RPC("GameOver", RpcTarget.Others);
 			}
 		}
 

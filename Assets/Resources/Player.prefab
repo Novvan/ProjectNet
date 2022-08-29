@@ -181,7 +181,6 @@ MonoBehaviour:
   speed: 5
   bulletSpawnPoint: {fileID: 5175669851154252885}
   graphics: {fileID: 1977134233345486664}
-  canvas: {fileID: 5702260716471186284}
   isDead: 0
 --- !u!114 &6999078975961956452
 MonoBehaviour:

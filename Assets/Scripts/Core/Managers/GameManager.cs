@@ -12,6 +12,7 @@ namespace ProjectNet.Core.Managers
 		public int keys;
 		public Transform spawnPoint;
 		public GameObject mainDoor;
+		public GameObject defeatPanel;
 		
 		public static GameManager Instance { get; private set; }
 
@@ -52,10 +53,10 @@ namespace ProjectNet.Core.Managers
 		{
 			Destroy(mainDoor);
 		}
-
+		[PunRPC]
 		public void GameOver()
 		{
-			Debug.Log("GameOver");
+			defeatPanel.SetActive(true);
 		}
 	}
 }
