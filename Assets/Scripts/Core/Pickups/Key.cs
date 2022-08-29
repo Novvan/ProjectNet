@@ -12,7 +12,9 @@ namespace ProjectNet.Core.Pickups
 		public override void OnPickUp(GameObject whoPickedUp)
 		{
 			base.OnPickUp(whoPickedUp);
+			if (_done) return;
 			ServerManager.Instance.RPC("RequestAddKey");
+			_done = true;
 			PhotonNetwork.Destroy(gameObject);
 		}
 	}
