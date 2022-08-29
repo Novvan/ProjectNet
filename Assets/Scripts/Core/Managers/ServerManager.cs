@@ -83,6 +83,19 @@ namespace ProjectNet.Core.Managers
 			}
 		}
 		
+		
+		[PunRPC]
+		public void RequestDeath(int viewId)
+		{
+			foreach (var client in _playerCharacters)	
+			{
+				if (client.Value.photonView.ViewID == viewId)
+				{
+					client.Value.TakeDamage();
+				}
+			}
+		}
+		
 		[PunRPC]
 		public void RequestEnemyMove(GameObject enemy, Vector2 dir)
 		{

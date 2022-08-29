@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using System;
+using Photon.Pun;
 using ProjectNet.Core.Interfaces;
 using UnityEngine;
 
@@ -36,6 +37,11 @@ namespace ProjectNet.Core.BulletComponents
 			{
 				PhotonNetwork.Destroy(gameObject);
 			}
+		}
+
+		private void OnTriggerEnter2D(Collider2D col)
+		{
+				PhotonNetwork.Destroy(gameObject);
 		}
 	}
 }

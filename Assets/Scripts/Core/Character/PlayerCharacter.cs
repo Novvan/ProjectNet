@@ -85,7 +85,7 @@ namespace ProjectNet.Core.Character
 			_lives--;
 			if (_lives <= 0)
 			{
-				FindObjectOfType<PlayerCharacterController>().isDead = true;
+				ServerManager.Instance.RequestRPC("RequestDeath", photonView.ViewID);
 				PhotonNetwork.Destroy(gameObject);
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;
