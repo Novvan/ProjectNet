@@ -17,7 +17,7 @@ namespace ProjectNet.Core.Managers
 		private Dictionary<Player, PlayerCharacter> _playerCharacters = new Dictionary<Player, PlayerCharacter>();
 		private Dictionary<PlayerCharacter, Player> _characterPlayers = new Dictionary<PlayerCharacter, Player>();
 		private Player _server;
-		
+
 		public GameManager gameManager;
 
 		public static ServerManager Instance { get; private set; }
@@ -41,7 +41,7 @@ namespace ProjectNet.Core.Managers
 		{
 			gameManager = GameManager.Instance;
 		}
-		
+
 		[PunRPC]
 		public void RequestRPC(string rpcName, params object[] p)
 		{
@@ -71,6 +71,7 @@ namespace ProjectNet.Core.Managers
 		{
 			return _characterPlayers[playerCharacter];
 		}
+
 		public PlayerCharacter GetPlayerCharacter(Player player)
 		{
 			return _playerCharacters[player];
@@ -79,45 +80,26 @@ namespace ProjectNet.Core.Managers
 		[PunRPC]
 		public void RequestMove(Player client, Vector2 dir)
 		{
-			if (_playerCharacters.ContainsKey(client))
-			{
+			if (!_playerCharacters.ContainsKey(client)) return;
+			if (!_playerCharacters[client].isDead)
 				_playerCharacters[client].Move(dir);
-			}
 		}
 
 		[PunRPC]
 		public void RequestDamage(Player client)
 		{
-			if(_playerCharacters.ContainsKey(client))
-			{
+			if (!_playerCharacters.ContainsKey(client)) return;
+			if (!_playerCharacters[client].isDead)
 				_playerCharacters[client].TakeDamage();
-			}
-			
-			// foreach (var client in _playerCharacters)
-			// {
-			// 	if (client.Value.photonView.ViewID == viewId)
-			// 	{
-			// 		client.Value.TakeDamage();
-			// 	}
-			// }
 		}
 
 
 		[PunRPC]
 		public void RequestDeath(Player client)
 		{
-			if (_playerCharacters.ContainsKey(client))
-			{
+			if (!_playerCharacters.ContainsKey(client)) return;
+			if (!_playerCharacters[client].isDead)
 				_playerCharacters[client].isDead = true;
-			}
-			
-			// foreach (var client in _playerCharacters)
-			// {
-			// 	if (client.Value.photonView.ViewID == viewId)
-			// 	{
-			// 		client.Value.TakeDamage();
-			// 	}
-			// }
 		}
 
 		[PunRPC]
@@ -135,10 +117,9 @@ namespace ProjectNet.Core.Managers
 		[PunRPC]
 		public void RequestShoot(Player client, Vector2 dir)
 		{
-			if (_playerCharacters.ContainsKey(client))
-			{
+			if (!_playerCharacters.ContainsKey(client)) return;
+			if (!_playerCharacters[client].isDead)
 				_playerCharacters[client].Shoot(dir);
-			}
 		}
 
 		[PunRPC]
