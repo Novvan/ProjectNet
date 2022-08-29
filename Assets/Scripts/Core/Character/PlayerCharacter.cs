@@ -84,13 +84,8 @@ namespace ProjectNet.Core.Character
 			_lives--;
 			if (_lives <= 0)
 			{
+				_playerCharacterView.SetDead(true);
 				ServerManager.Instance.RequestRPC("RequestDeath", ServerManager.Instance.GetPlayer(this));
-
-				gameObject.GetComponent<CircleCollider2D>().enabled = false;
-				gameObject.GetComponent<BoxCollider2D>().enabled = false;
-				graphics.gameObject.SetActive(false);
-				// canvas.gameObject.SetActive(false);
-				this.gameObject.tag = "Phantom";
 			}
 			this.transform.position = GameManager.Instance.spawnPoint.position;
 		}

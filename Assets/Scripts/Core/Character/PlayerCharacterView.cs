@@ -17,7 +17,7 @@ namespace ProjectNet.Core.Character
 		private Recorder _recorder;
 		
 		private static readonly int IsWalking = Animator.StringToHash("isWalking");
-		private static readonly int IsMirror = Animator.StringToHash("isMirror");
+		private static readonly int IsDead = Animator.StringToHash("isDead");
 
 		private void Awake()
 		{
@@ -35,6 +35,10 @@ namespace ProjectNet.Core.Character
 		public void SetWalk(bool b) 
 		{
 			_animator.SetBool(IsWalking, b);
+		}
+		public void SetDead(bool b) 
+		{
+			_animator.SetBool(IsDead, b);
 		}
 		
 		public void SetPlayerNickname(string nickname)
