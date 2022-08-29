@@ -42,6 +42,11 @@ namespace ProjectNet.Core.Managers
 			gameManager = GameManager.Instance;
 		}
 		
+		[PunRPC]
+		public void RequestRPC(string rpcName, params object[] p)
+		{
+			photonView.RPC(rpcName, _server, p);
+		}
 
 		[PunRPC]
 		public void RequestConnect(Player client)
@@ -69,12 +74,6 @@ namespace ProjectNet.Core.Managers
 		public PlayerCharacter GetPlayerCharacter(Player player)
 		{
 			return _playerCharacters[player];
-		}
-
-		[PunRPC]
-		public void RequestRPC(string rpcName, params object[] p)
-		{
-			photonView.RPC(rpcName, _server, p);
 		}
 
 		[PunRPC]
@@ -145,14 +144,14 @@ namespace ProjectNet.Core.Managers
 		[PunRPC]
 		public void RequestAddKey()
 		{
-			GameManager.Instance.keys++;
+			GameManager.Instance.AddKey();
 		}
 
 		[PunRPC]
 		public void RequestOpenDoor(GameObject door)
 		{
 			if (GameManager.Instance.keys <= 0) return;
-			GameManager.Instance.keys--;
+			GameManager.Instance.UseKey();
 			var doorComponent = door.GetComponent<Door>();
 			if (doorComponent != null)
 			{

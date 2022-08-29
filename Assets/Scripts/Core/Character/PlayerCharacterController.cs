@@ -68,7 +68,13 @@ namespace ProjectNet.Core.Character
 				Debug.Log("GameState != Play");
 				return;
 			}
-			_isDead = ServerManager.Instance.GetPlayerCharacter(_localClient).isDead;
+			var playerChar = ServerManager.Instance.GetPlayerCharacter(_localClient);
+			if (playerChar == null)
+			{
+				Debug.Log("playerChar == null");
+				return;
+			}
+			_isDead = playerChar.isDead;
 			if (_isDead)
 			{
 				Debug.Log("Player is dead");
