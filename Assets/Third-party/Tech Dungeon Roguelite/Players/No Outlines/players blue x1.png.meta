@@ -197,6 +197,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -228,9 +230,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1500,6 +1505,65 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      players blue x1_10: 9012771211332889536
+      players blue x1_20: 118536655622032352
+      players blue x1_19: -7425896917961295793
+      players blue x1_42: 5706441514418600287
+      players blue x1_4: -728909244436727022
+      players blue x1_49: -2256990076932048856
+      players blue x1_27: 7918566808435142737
+      players blue x1_30: 2095714282209577350
+      players blue x1_17: -7873303376382930142
+      players blue x1_34: -775065770524442334
+      players blue x1_15: -8681091468924136842
+      players blue x1_43: 8978738247041981936
+      players blue x1_47: -5704329671912445109
+      players blue x1_32: 2279097785795415571
+      players blue x1_12: 4114090264542950887
+      players blue x1_50: 4082753797332142041
+      players blue x1_1: -3866771974287108331
+      players blue x1_14: 3701838156708803874
+      players blue x1_46: 5110109542511321211
+      players blue x1_51: 6961721257464514199
+      players blue x1_25: 5448432384047946013
+      players blue x1_3: -4597044664251399588
+      players blue x1_52: -8921776772794599460
+      players blue x1_5: 1227081558280587587
+      players blue x1_44: -3262768723211758952
+      players blue x1_37: -4594553269038299860
+      players blue x1_29: -4889820366214227255
+      players blue x1_38: 2609140562601419367
+      players blue x1_35: -7090962379041630616
+      players blue x1_16: 3348276922482517349
+      players blue x1_48: -8682429567293503560
+      players blue x1_22: 2751316546098024759
+      players blue x1_57: 605868850520334611
+      players blue x1_7: 1538298404319793793
+      players blue x1_45: 4756125588139868718
+      players blue x1_41: 8893285570395141595
+      players blue x1_55: 4744214636515333958
+      players blue x1_6: -1164264069027509666
+      players blue x1_56: -4245517847778399206
+      players blue x1_54: 8487152714383721827
+      players blue x1_18: -3026752951706196183
+      players blue x1_24: 3160367757032792348
+      players blue x1_0: -3591552613031203118
+      players blue x1_39: 2199303009220256199
+      players blue x1_28: -8073211055662574909
+      players blue x1_8: -8984292708282352461
+      players blue x1_21: -2585392819492366797
+      players blue x1_31: 7197585444464597564
+      players blue x1_13: -7297232218668936529
+      players blue x1_11: -474857092533192007
+      players blue x1_23: -4392421719393099968
+      players blue x1_36: 6840838490777379437
+      players blue x1_40: -6381105341409117411
+      players blue x1_26: 4746820285913750644
+      players blue x1_53: 6826351345098391507
+      players blue x1_33: -8829864860864565086
+      players blue x1_2: -7904116220757903311
+      players blue x1_9: -4938661139490066656
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

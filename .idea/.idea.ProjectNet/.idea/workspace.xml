@@ -4,8 +4,28 @@
     <list default="true" id="aa457008-412f-43b5-a8c1-8235d8e9a237" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectNet/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Character/PlayerCharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Managers/MenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/CardsUI/Textures/UI/FeelCardsUI_StatIcons.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/CardsUI/Textures/UI/FeelCardsUI_StatIcons.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuck.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuck.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckSmoke.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckSmoke.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckUI.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Duck/Sprites/FeelDuckUI.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Wheel/Animation/FeelWheelDust.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/FeelDemos/Wheel/Animation/FeelWheelDust.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMControls/Demo/Sprites/mobile-controls-spritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMControls/Demo/Sprites/mobile-controls-spritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMDebugMenu/Sprites/MMDebugMenuSpritesheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMDebugMenu/Sprites/MMDebugMenuSpritesheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMSceneLoading/Sprites/LoadingAnimation.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMSceneLoading/Sprites/LoadingAnimation.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMSceneLoading/Sprites/LoadingCompleteAnimation.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/MMTools/Tools/MMSceneLoading/Sprites/LoadingCompleteAnimation.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Common/Scripts/Editor/MMNVBuildPostProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Common/Scripts/Editor/MMNVBuildPostProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/DemoAssets/AHAPPresetsDemo/Sprites/NVPresetsIcons.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/DemoAssets/AHAPPresetsDemo/Sprites/NVPresetsIcons.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/DemoAssets/RegularPresetsDemo/Sprites/RegularPresetsIcons.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/DemoAssets/RegularPresetsDemo/Sprites/RegularPresetsIcons.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/_OLD/v1Demo/Sprites/MoreMountainsLogo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Feel/NiceVibrations/Demos/_OLD/v1Demo/Sprites/MoreMountainsLogo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Outer Buddies/buddie0 sprite sheet x1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Outer Buddies/buddie0 sprite sheet x1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/Players/No Outlines/players blue x1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/Players/No Outlines/players blue x1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/Players/No Outlines/players blue x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/Players/No Outlines/players blue x3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/UI/ui x1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/UI/ui x1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/tileset/tileset x1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Third-party/Tech Dungeon Roguelite/tileset/tileset x1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +109,7 @@
       <workItem from="1660329430736" duration="3443000" />
       <workItem from="1660597028130" duration="1339000" />
       <workItem from="1661635362119" duration="7557000" />
-      <workItem from="1661728744955" duration="6667000" />
+      <workItem from="1661728744955" duration="7935000" />
     </task>
     <servers />
   </component>
