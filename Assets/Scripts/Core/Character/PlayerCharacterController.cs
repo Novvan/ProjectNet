@@ -63,7 +63,11 @@ namespace ProjectNet.Core.Character
 		{
 			if (_isWriting) return;
 			_moveDirection = _move.ReadValue<Vector2>();
-			if (_fire.triggered) ServerManager.Instance.RPC("RequestShoot", _localClient, new Vector2(_moveDirection.x, 0));
+			if (_fire.triggered)
+			{
+				var x = _moveDirection.x;
+				ServerManager.Instance.RPC("RequestShoot", _localClient, new Vector2(x, 0));
+			}
 			if (_recorder == null) return;
 			_recorder.TransmitEnabled = _talk.IsPressed();
 		}

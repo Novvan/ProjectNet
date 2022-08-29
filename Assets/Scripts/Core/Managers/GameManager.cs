@@ -16,6 +16,7 @@ namespace ProjectNet.Core.Managers
 	public class GameManager : MonoBehaviourPunCallbacks
 	{
 		public GameSettings gameSettings;
+		public int keys;
 		private GameState _gameState;
 
 		public event Action<GameState> OnGameStateChanged;

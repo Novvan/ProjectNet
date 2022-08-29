@@ -16,7 +16,8 @@ namespace ProjectNet.Core.Character
 
 		private Rigidbody2D _rb;
 		private PlayerCharacterView _playerCharacterView;
-
+		private float _lastLookDirection = 1;
+		
 		#endregion
 
 		private void Awake()
@@ -30,11 +31,16 @@ namespace ProjectNet.Core.Character
 		{
 			_playerCharacterView.SetAnim(direction.magnitude > 0.01 ? PlayerAnimations.Idle : PlayerAnimations.Walk);
 			_rb.velocity = direction.normalized * speed;
+
+			if (_rb.velocity.x != 0) _lastLookDirection = direction.normalized.x;
 		}
 
 		public void Shoot(Vector2 dir)
 		{
-			if (dir == Vector2.zero) return;
+			if (dir == Vector2.zero)
+			{
+				dir.x = _lastLookDirection;
+			}
 
 			var obj = PhotonNetwork.Instantiate(GameManager.Instance.gameSettings.bulletPrefab
 				.name, bulletSpawnPoint.position, Quaternion.identity);

@@ -3,6 +3,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using ProjectNet.Core.CameraScripts;
 using ProjectNet.Core.Character;
+using ProjectNet.Core.DoorComponents;
 using UnityEngine;
 
 namespace ProjectNet.Core.Managers
@@ -41,7 +42,7 @@ namespace ProjectNet.Core.Managers
 			var id = character.photonView.ViewID;
 			photonView.RPC("SetCamera", client, id, cameraController.Offset);
 			character.GetComponent<PlayerCharacterView>().SetPlayerNickname(client.NickName);
-		} 
+		}
 
 		private void CreatePlayer(Player client)
 		{
@@ -67,7 +68,7 @@ namespace ProjectNet.Core.Managers
 				_playerCharacters[client].Move(dir);
 			}
 		}
-		
+
 		[PunRPC]
 		public void RequestShoot(Player client, Vector2 dir)
 		{
@@ -76,7 +77,25 @@ namespace ProjectNet.Core.Managers
 				_playerCharacters[client].Shoot(dir);
 			}
 		}
-		
+
+		[PunRPC]
+		public void RequestAddKey()
+		{
+			GameManager.Instance.keys++;
+		}
+
+		[PunRPC]
+		public void RequestOpenDoor(GameObject door)
+		{
+			if (GameManager.Instance.keys <= 0) return;
+			GameManager.Instance.keys--;
+			var doorComponent = door.GetComponent<Door>();
+			if (doorComponent != null)
+			{
+				doorComponent.OpenDoor();
+			}
+		}
+
 		[PunRPC]
 		public void SetCamera(int id, Vector3 offset)
 		{

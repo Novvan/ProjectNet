@@ -49,6 +49,9 @@ TagManager:
   - name: wall
     uniqueID: 3388195529
     locked: 0
+  - name: pickUps
+    uniqueID: 2563850355
+    locked: 0
   - name: player
     uniqueID: 1935332991
     locked: 0
