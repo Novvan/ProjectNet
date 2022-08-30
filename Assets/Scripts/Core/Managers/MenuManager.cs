@@ -1,10 +1,12 @@
-﻿using Photon.Pun;
+﻿using System;
+using Photon.Pun;
 using Photon.Realtime;
 using Photon.Voice.PUN;
 using ProjectNet.ScriptableObjects.Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace ProjectNet.Core.Managers
 {
@@ -21,7 +23,6 @@ namespace ProjectNet.Core.Managers
 		[SerializeField] private TMP_InputField screenNameInputField, roomNameInputField;
 
 		#endregion
-
 
 		private void Start()
 		{

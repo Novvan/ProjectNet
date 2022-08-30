@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 namespace ProjectNet.Core.Managers
 {
-	public class ChatManager : MonoBehaviour, IChatClientListener
+	public class ChatManager : MonoBehaviourPun, IChatClientListener
 	{
 		public Action OnSelect = delegate { };
 		public Action OnDeselect = delegate { };
@@ -89,7 +89,8 @@ namespace ProjectNet.Core.Managers
 			switch (words[0])
 			{
 				case "/openDoors":
-					ServerManager.Instance.RequestRPC("RequestOpenAllDoors");
+					//ServerManager.Instance.RequestRPC("RequestOpenAllDoors");
+					photonView.RPC("RequestOpenAllDoors", RpcTarget.AllBuffered);
 					inputField.text = "";
 					EventSystem.current.SetSelectedGameObject(null);
 					EventSystem.current.SetSelectedGameObject(inputField.gameObject);
