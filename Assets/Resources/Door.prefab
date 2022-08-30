@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6361188905814680364}
   - component: {fileID: 6361188905814680365}
   - component: {fileID: 3984062051746219295}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -177,7 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openColor: {r: 0, g: 1, b: 0.09019608, a: 1}
-  doorCollider: {fileID: 6361188905814680352}
 --- !u!114 &3984062051746219295
 MonoBehaviour:
   m_ObjectHideFlags: 0

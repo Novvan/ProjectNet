@@ -6,7 +6,6 @@ namespace ProjectNet.Core.DoorComponents
 	public class Door : MonoBehaviourPun
 	{
 		public Color openColor;
-		public Collider2D doorCollider;
 		private bool _doorOpened = false;
 		
 		public bool IsOpened => _doorOpened;
@@ -20,7 +19,10 @@ namespace ProjectNet.Core.DoorComponents
 		public void ROpenDoor()
 		{
 			GetComponent<SpriteRenderer>().color = openColor;
-			doorCollider.enabled = false;
+			foreach (var component in GetComponents<Collider2D>())
+			{
+				component.enabled = false;
+			}
 			_doorOpened = true;
 		}
 	}
