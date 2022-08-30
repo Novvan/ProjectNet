@@ -15,11 +15,9 @@ namespace ProjectNet.Core.EnemyComponents
 		private void OnTriggerEnter2D(Collider2D col)
 		{
 			if (col.CompareTag("TriggerRadius")) return;
+			if (!col.gameObject.CompareTag("Bullet")) return;
 			
-			if (col.gameObject.CompareTag("Bullet"))
-			{
-				PhotonNetwork.Destroy(gameObject);
-			}
+			PhotonNetwork.Destroy(gameObject);
 		}
 	}
 }

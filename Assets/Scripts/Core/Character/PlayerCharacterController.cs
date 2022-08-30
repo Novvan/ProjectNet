@@ -19,7 +19,6 @@ namespace ProjectNet.Core.Character
 		private Vector2 _moveDirection;
 		private bool _isWriting;
 		private Recorder _recorder;
-		private bool _isDead = false;
 
 		#endregion
 
